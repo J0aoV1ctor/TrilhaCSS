@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.app {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 56px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar videos";
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.videos {
+  grid-area: videos;
+  padding: 24px;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+
+.video-card {
+  height: 280px;
+  background: #e5e7eb;
+  border-radius: 12px;
+}
