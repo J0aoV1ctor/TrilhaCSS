@@ -1,42 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Clonando a Página do Youtube com CSS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Replica</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <div id="container" class="navegação">
-        <div id="start" class="inicio-do-menu">
-            <div id="menu" class="inicio-do-menu"> <button><img src="/assets/images/menu.png" alt="Botão menu"></button></div>
-            <div id="logo" class="inicio-do-menu"> <img src="/assets/images/226e23ea117ae4277f6ac9be461fc1ec2555fed3.png" alt="Logo Youtube"></div>
-        </div>
-        <div id="center" class="style-scope-ytd-masthead">
-            <div id="search" class="caixa-de-pesquisa"> <img src="/assets/images/Center.png" alt="caixa-de-pesquisa"></div>
-        </div>
-        <div id="end" class="style-scope-ytd-masthead">
-            <div id="right" class="fim-do-menu"><img src="/assets/images/Right.png" alt="fim-do-menu"></div>
-        </div>
+
+<header class="header">
+  <div class="nav">
+    <div class="logo">Discord</div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <ul class="menu">
+      <li>Baixar</li>
+      <li>Nitro</li>
+      <li>Descobrir</li>
+      <li>Segurança</li>
+      <li>Suporte</li>
+      <button class="login">Entrar</button>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>IMAGINE UM LUGAR...</h1>
+    <p>
+      Onde você possa pertencer a um clube, um grupo de estudos ou uma
+      comunidade de games. Um lugar para conversar todos os dias.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="btn white">Baixar para Windows</button>
+      <button class="btn dark">Abrir no navegador</button>
     </div>
+  </div>
+</section>
 
-    <div id="container" class="video">
-        <div id="video" class="imagem"> <img src="/assets/images/image 2.png" alt="video"> 
-         <h1> Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo vertido com HTML e CSS </h1>
-        </div>
-        <div id="video" class="video-actions"> <img src="/assets/images/Video Actions.png" alt="Informações-canal"> 
-            <h2>28.418 visualizações  Transmitido ao vivo em 23 ago. de 2022</h2>
-            <h3>Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.</h3>
+<section class="feature">
+  <div class="feature-text">
+    <h2>Crie um espaço controlado por convite</h2>
+    <p>
+      Servidores são organizados em canais com tema para colaboração,
+      compartilhamento e conversa.
+    </p>
+  </div>
+</section>
 
-         <div id="container" class="select">
-            <div id="side-bar" class="proximo-video">
-                <img src="/assets/images/Sidebar.png" alt="Próximos vídeos"> 
-          </div>
-        </div>
-    
-        </div>
-    </div>
-
+<section class="feature light">
+  <div class="feature-text">
+    <h2>Onde é fácil se encontrar</h2>
+    <p>
+      Entre em um canal de voz quando quiser. Amigos podem ver que você
+      está online e entrar na conversa.
+    </p>
+  </div>
+</section>
 
 </body>
 </html>
